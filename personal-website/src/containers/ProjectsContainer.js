@@ -6,6 +6,9 @@ class ProjectsContainer extends React.Component {
     render() {
         return (
             <div>
+                <div id="projects-container">
+                
+                </div>
                 <NavigationBar />
             </div>
         )

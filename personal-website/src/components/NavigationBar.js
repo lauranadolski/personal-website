@@ -9,17 +9,17 @@ class NavigationBar extends React.Component {
             <Router>
                 <div id="navigation-bar">
                     <Link to="/">
-                        <button id="name">Laura Nadolski</button>
+                        <div id="name">Laura Nadolski</div>
                     </Link>
 
                     <Link to="/projects">
-                        <button className="navigation-bar-button">Projects</button>
+                        <div className="navigation-bar-link-right-side">Projects</div>
                     </Link>
                     <Link to="/about">
-                        <button className="navigation-bar-button">About Me</button>
+                        <div className="navigation-bar-link-right-side">About Me</div>
                     </Link>
                     <Link to="/contact">
-                        <button className="navigation-bar-button">Say Hello</button>
+                        <div className="navigation-bar-link-right-side">Say Hello</div>
                     </Link>
                 </div>
             </Router>

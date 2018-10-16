@@ -6,6 +6,9 @@ class AboutPageContainer extends React.Component {
     render() {
         return (
             <div>
+                <div id="about-container">
+                    
+                </div>
                 <NavigationBar />
             </div>
         )
