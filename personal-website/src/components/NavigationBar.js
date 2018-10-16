@@ -1,30 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class NavigationBar extends React.Component {
 
 
     render() {
         return (
-            <div id="navigation-bar">
-                <Link to="/">
-                    <div id="name">
-                        Laura Nadolski
-                    </div>
-                </Link>
+            <Router>
+                <div id="navigation-bar">
+                    <Link to="/">
+                        <button id="name">Laura Nadolski</button>
+                    </Link>
 
-                <div id="navigation-bar-button">
                     <Link to="/projects">
-                        <button>Projects</button>
+                        <button className="navigation-bar-button">Projects</button>
                     </Link>
                     <Link to="/about">
-                        <button>About Me</button>
+                        <button className="navigation-bar-button">About Me</button>
                     </Link>
                     <Link to="/contact">
-                        <button>Say Hello</button>
+                        <button className="navigation-bar-button">Say Hello</button>
                     </Link>
                 </div>
-            </div>
+            </Router>
         )
     }
 }
