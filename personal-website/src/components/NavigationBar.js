@@ -8,19 +8,25 @@ class NavigationBar extends React.Component {
         return (
             <Router>
                 <div id="navigation-bar">
-                    <Link to="/">
-                        <div id="name">Laura Nadolski</div>
-                    </Link>
+                    <div id="name-container">
+                        <Link to="/">
+                            <div id="name">
+                                Laura Nadolski
+                            </div>
+                        </Link>
+                    </div>
 
-                    <Link to="/projects">
+                    <div id="navigation-bar-right-side-links-container">
+                        <Link to="/projects">
                         <div className="navigation-bar-link-right-side">Projects</div>
-                    </Link>
-                    <Link to="/about">
-                        <div className="navigation-bar-link-right-side">About Me</div>
-                    </Link>
-                    <Link to="/contact">
-                        <div className="navigation-bar-link-right-side">Say Hello</div>
-                    </Link>
+                        </Link>
+                        <Link to="/about">
+                            <div className="navigation-bar-link-right-side">About Me</div>
+                        </Link>
+                        <Link to="/contact">
+                            <div className="navigation-bar-link-right-side">Say Hello</div>
+                        </Link>
+                    </div>
                 </div>
             </Router>
         )

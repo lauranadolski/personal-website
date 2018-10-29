@@ -10,14 +10,16 @@ import ContactPageContainer from './ContactPageContainer';
 class App extends Component {
   render() {
     return (
-        <Router>
-          <Switch>
-            <Route exact path="/" component={NavigationBar}/>
-            <Route path="/projects" component={ProjectsContainer}/>
-            <Route path="/about" component={AboutPageContainer}/>
-            <Route path="/contact" component={ContactPageContainer}/>
-          </Switch>
-        </Router>
+      <div id="main-container">
+      <Router>
+        <Switch>
+          <Route exact path="/" component={NavigationBar}/>
+          <Route path="/projects" component={ProjectsContainer}/>
+          <Route path="/about" component={AboutPageContainer}/>
+          <Route path="/contact" component={ContactPageContainer}/>
+        </Switch>
+      </Router>
+      </div>
     );
   }
 }
