@@ -8,8 +8,12 @@ class ContactPageContainer extends React.Component {
         win.focus();
     }
 
-    clickHelper = () => {
+    openLinkedin = () => {
         this.openInNewTab("https://www.linkedin.com/in/lauranadolski/")
+    }
+
+    openGitHub = () => {
+        this.openInNewTab("https://github.com/lauranadolski");
     }
 
 
@@ -17,10 +21,10 @@ class ContactPageContainer extends React.Component {
         return (
             <div>
                 <div id="contact-container">
-                    mail@lauranadolski.com
+                    Find me on <a onClick={this.openGitHub}>GitHub</a> and <a onClick={this.openLinkedin}>LinkedIn</a>. 
                     <br></br>
                     <br></br>
-                    <div onClick={this.clickHelper}>LinkedIn</div>
+                    <a href="mailto: heylorra@gmail.com"> Shoot me an email.</a>
                 </div>
             </div>
         )
