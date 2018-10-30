@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import '../styling/App.css';
 
 import NavigationBar from '../components/NavigationBar';
@@ -45,23 +44,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-// render() {
-//   return (
-//     <div>
-//     <Router>
-//       <Switch>
-
-
-//         <Route path="/projects" component={ProjectsContainer}/>
-//         <Route path="/about" component={AboutPageContainer}/>
-//         <Route path="/contact" component={ContactPageContainer}/>
-      
-//       </Switch>
-//     </Router>
-//     <NavigationBar />
-//     </div>
-//   );
-// }
