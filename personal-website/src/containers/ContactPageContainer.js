@@ -2,7 +2,6 @@ import React from 'react';
 
 class ContactPageContainer extends React.Component {
 
-
     openInNewTab = (targetURL) => {
         let win = window.open(targetURL, '_blank');
         win.focus();
