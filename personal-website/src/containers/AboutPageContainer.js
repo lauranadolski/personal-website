@@ -6,7 +6,20 @@ class AboutPageContainer extends React.Component {
         return (
             <div>
                 <div id="about-container">
-                    This is about me.
+                    Hello, and welcome. 
+                    <br></br>
+                    <br></br>
+                    My name is Laura and I'm a fullstack software engineer based in Brooklyn, NY.
+
+                    <br></br>
+                    <br></br>
+
+                    With a background in 
+
+                    <br></br>
+                    <br></br>
+
+                    Areas
                 </div>
             </div>
         )

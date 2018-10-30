@@ -56,21 +56,33 @@ a {
 }
 
 #contact-container {
-position: absolute;
+position: fixed;
 text-align: center;
 top: 50%;
 left: 50%;
-margin: -100px 0 0 -150px;
+transform: translate(-50%, -50%);
 font: 20px Cotham-Sans, sans-serif;
 z-index: 50;
 }
 
 
 #projects-container {
-
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 20px Cotham-Sans, sans-serif;
+  z-index: 50;
 }
 
 
 #about-container {
+  position: fixed;
 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font: 20px Cotham-Sans, sans-serif;
+  z-index: 50;
 }

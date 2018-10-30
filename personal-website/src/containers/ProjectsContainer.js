@@ -6,7 +6,7 @@ class ProjectsContainer extends React.Component {
         return (
             <div>
                 <div id="projects-container">
-                I am project.
+                Coming soon
                 </div>
             </div>
         )
