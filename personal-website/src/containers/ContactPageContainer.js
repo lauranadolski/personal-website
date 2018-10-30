@@ -1,5 +1,4 @@
 import React from 'react';
-import NavigationBar from '../components/NavigationBar';
 
 class ContactPageContainer extends React.Component {
 
@@ -7,9 +6,8 @@ class ContactPageContainer extends React.Component {
         return (
             <div>
                 <div id="contact-container">
-                    
+                    mail@lauranadolski.com
                 </div>
-                <NavigationBar />
             </div>
         )
     }

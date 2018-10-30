@@ -1,5 +1,4 @@
 import React from 'react';
-import NavigationBar from '../components/NavigationBar';
 
 class ProjectsContainer extends React.Component {
 
@@ -7,9 +6,8 @@ class ProjectsContainer extends React.Component {
         return (
             <div>
                 <div id="projects-container">
-                
+                I am project.
                 </div>
-                <NavigationBar />
             </div>
         )
     }

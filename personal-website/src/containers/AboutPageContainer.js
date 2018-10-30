@@ -1,5 +1,4 @@
 import React from 'react';
-import NavigationBar from '../components/NavigationBar';
 
 class AboutPageContainer extends React.Component {
 
@@ -7,9 +6,8 @@ class AboutPageContainer extends React.Component {
         return (
             <div>
                 <div id="about-container">
-                    
+                    This is about me.
                 </div>
-                <NavigationBar />
             </div>
         )
     }

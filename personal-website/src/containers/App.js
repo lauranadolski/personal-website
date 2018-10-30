@@ -8,20 +8,60 @@ import AboutPageContainer from './AboutPageContainer';
 import ContactPageContainer from './ContactPageContainer';
 
 class App extends Component {
+  state = {
+    navigation: 'home'
+  }
+
+  chooseComponentToRender = () => {
+    if (this.state.navigation === "contact") {
+      return (
+        <ContactPageContainer toggleNavigation={this.toggleNavigation} />
+      )
+    } else if (this.state.navigation === "about") {
+      return (
+        <AboutPageContainer toggleNavigation={this.toggleNavigation} />
+      )
+    } else if (this.state.navigation === "projects") {
+      return (
+        <ProjectsContainer toggleNavigation={this.toggleNavigation} />
+      )
+    }
+  }
+
+  toggleNavigation = (destinationPage) => {
+    this.setState({
+      navigation: destinationPage
+    })
+  }
+
   render() {
     return (
-      <div id="main-container">
-      <Router>
-        <Switch>
-          <Route exact path="/" component={NavigationBar}/>
-          <Route path="/projects" component={ProjectsContainer}/>
-          <Route path="/about" component={AboutPageContainer}/>
-          <Route path="/contact" component={ContactPageContainer}/>
-        </Switch>
-      </Router>
+      <div>
+        {this.chooseComponentToRender()}
+        <NavigationBar toggleNavigation={this.toggleNavigation}/>
       </div>
     );
   }
 }
 
 export default App;
+
+
+
+// render() {
+//   return (
+//     <div>
+//     <Router>
+//       <Switch>
+
+
+//         <Route path="/projects" component={ProjectsContainer}/>
+//         <Route path="/about" component={AboutPageContainer}/>
+//         <Route path="/contact" component={ContactPageContainer}/>
+      
+//       </Switch>
+//     </Router>
+//     <NavigationBar />
+//     </div>
+//   );
+// }
