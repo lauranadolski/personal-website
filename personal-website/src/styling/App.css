@@ -29,12 +29,13 @@ a:hover {
 }
 
 #name-container {
-  font: 33px Cotham-Sans, sans-serif;
+  font: 37px Cotham-Sans, sans-serif;
   bottom: 8px;
   left: 15%;
   float: left;
-  width: 30%;
+  width: 25%;
   overflow: visible;
+  padding-left: .5%;
 }
 
 #navigation-bar-right-side-links-container {
@@ -50,12 +51,12 @@ a:hover {
 }
 
 .navigation-bar-link-right-side {
-  font: 18px Cotham-Sans, sans-serif;
+  font: 19px Cotham-Sans, sans-serif;
   color: black;
   text-decoration: none;
   float: right;
   display: inline;
-  width: 20%;
+  width: 25%;
   padding: 1%; 
 }
 
@@ -69,7 +70,6 @@ font: 20px Cotham-Sans, sans-serif;
 z-index: 50;
 }
 
-
 #projects-container {
   position: fixed;
   text-align: center;
@@ -79,7 +79,6 @@ z-index: 50;
   font: 20px Cotham-Sans, sans-serif;
   z-index: 50;
 }
-
 
 #about-container {
   position: fixed;
