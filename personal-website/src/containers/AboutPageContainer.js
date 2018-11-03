@@ -15,6 +15,10 @@ class AboutPageContainer extends React.Component {
         this.openInNewTab("https://github.com/lauranadolski");
     }
 
+    openArtsy = () => {
+        this.openInNewTab("https://www.artsy.net/");
+    }
+
 
     render() {
         return (
@@ -28,7 +32,7 @@ class AboutPageContainer extends React.Component {
                     <br></br>
                     <br></br>
 
-                    I first discovered web development after working on the product team at <a href="https://www.artsy.net/">Artsy</a>. I bring experience in product development, hiring, and user research at a fast-growing and dynamic NYC startup and a passion for a wide range of intersectional social justice areas.
+                    I first discovered web development after working on the product team at <a onClick={this.openArtsy}>Artsy</a>. I bring experience in product development, hiring, and user research at a fast-growing and dynamic NYC startup and a passion for a wide range of intersectional social justice areas.
 
                     <br></br>
                     <br></br>
