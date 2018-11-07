@@ -23,27 +23,27 @@ class NavigationBar extends React.Component {
         return (
             <div id="navigation-bar">
                 <div id="name-container">
-                    <div 
+                    <a 
                     id="name"
                     onClick={this.showHome}>
                         Laura Nadolski
-                    </div>
+                    </a>
                 </div>
 
                 <div id="navigation-bar-right-side-links-container">
-                    <div 
+                    <a 
                     onClick={this.showProjects}className="navigation-bar-link-right-side">
                         Projects
-                    </div>
-                    <div 
+                    </a>
+                    <a 
                     onClick={this.showAbout}className="navigation-bar-link-right-side">
                         About
-                    </div>
-                    <div
+                    </a>
+                    <a
                     onClick={this.showContactPage} 
                     className="navigation-bar-link-right-side">
                         Say Hello
-                    </div>
+                    </a>
                 </div>
             </div>
             
