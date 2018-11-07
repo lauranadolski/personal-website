@@ -23,7 +23,7 @@ class NavigationBar extends React.Component {
         return (
             <div id="navigation-bar">
                 <div id="name-container">
-                    <a 
+                    <a href="#"
                     id="name"
                     onClick={this.showHome}>
                         Laura Nadolski
