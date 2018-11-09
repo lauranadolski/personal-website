@@ -11,7 +11,8 @@ class ProjectsContainer extends React.Component {
                     exampleType={project.exampleType}
                     exampleURL={project.exampleURL}
                     gitHubURL={project.gitHubURL}
-                    description={project.description}
+                    descriptionSummary={project.descriptionSummary}
+                    descriptionBulletPoints={project.descriptionBulletPoints}
                 />
             )
         })
