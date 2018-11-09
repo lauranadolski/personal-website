@@ -19,8 +19,12 @@ class ProjectCard extends React.Component {
                 |
                 <a target="_blank" href={this.props.exampleURL}>{this.props.exampleType}</a>
             </div>
-            <p className="project-description-summary">{this.props.descriptionSummary}</p>
-            {this.renderProjectBulletPoints()}
+            <div className="project-info">
+                <p className="project-description-summary">{this.props.descriptionSummary}</p>
+                <ul>
+                    {this.renderProjectBulletPoints()}
+                </ul>
+            </div>
         </div>
         )
     }
