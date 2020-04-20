@@ -7,7 +7,7 @@ class AboutPageContainer extends React.Component {
         win.focus();
     }
 
-    openLinkedin = () => {
+    openLinkedIn = () => {
         this.openInNewTab("https://www.linkedin.com/in/lauranadolski/")
     }
 
@@ -19,30 +19,29 @@ class AboutPageContainer extends React.Component {
         this.openInNewTab("https://www.artsy.net/");
     }
 
+    openGreenhouse = () => {
+        this.openInNewTab("https://www.greenhouse.io/");
+    }
+
 
     render() {
         return (
             <div>
                 <div id="about-container">
-                    Hello and welcome. 
+                    Hello and welcome 👋 
                     <br></br>
                     <br></br>
-                    I'm Laura and I'm a fullstack software engineer based in Brooklyn.
+                    I'm Laura and I'm a fullstack software engineer at <a onClick={this.openGreenhouse}>Greenhouse Software</a>.
 
                     <br></br>
                     <br></br>
 
-                    I first discovered web development after working on the product team at <a onClick={this.openArtsy}>Artsy</a>. I bring experience in product development, hiring, and user research at a fast-growing and dynamic NYC startup and a passion for a wide range of intersectional social justice areas.
-
-                    <br></br>
-                    <br></br>
-
-                    I love: JavaScript, React, Redux, HTML, CSS, Ruby, Rails.
+                    {`Experienced with: JavaScript, React, Styled Components, Ruby, Rails, PostgreSQL, HTML, CSS, SASS, GitHub Actions, Docker, Git & GitHub, Craft CMS, RSpec, Jest, Flow, JIRA, and more~`} 
                     
                     <br></br>
                     <br></br>
 
-                    Find me on <a onClick={this.openGitHub}>GitHub</a> and <a onClick={this.openLinkedin}>LinkedIn</a>.
+                    Find me on <a onClick={this.openGitHub}>GitHub</a> and <a onClick={this.openLinkedIn}>LinkedIn</a>.
                 </div>
             </div>
         )

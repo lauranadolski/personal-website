@@ -31,18 +31,14 @@ class NavigationBar extends React.Component {
                 </div>
 
                 <div id="navigation-bar-right-side-links-container">
-                    <a 
-                    onClick={this.showProjects}className="navigation-bar-link-right-side">
-                        Projects
-                    </a>
-                    <a 
-                    onClick={this.showAbout}className="navigation-bar-link-right-side">
-                        About
-                    </a>
                     <a
                     onClick={this.showContactPage} 
                     className="navigation-bar-link-right-side">
                         Say Hello
+                    </a>
+                    <a 
+                    onClick={this.showAbout}className="navigation-bar-link-right-side">
+                        About
                     </a>
                 </div>
             </div>
