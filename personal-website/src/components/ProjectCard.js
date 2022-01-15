@@ -15,9 +15,9 @@ class ProjectCard extends React.Component {
         <div className="project-card">
             <h1 className="project-title">{this.props.name}</h1>
             <div className="project-links">
-                <a target="_blank" href=  {this.props.gitHubURL}>GitHub</a>
+                <a href={this.props.gitHubURL} target="_blank" rel="noopener noreferrer">GitHub</a>
                 |
-                <a target="_blank" href={this.props.exampleURL}>{this.props.exampleType}</a>
+                <a href={this.props.exampleURL} target="_blank" rel="noopener noreferrer">{this.props.exampleType}</a>
             </div>
             <div className="project-info">
                 <p className="project-description-summary">{this.props.descriptionSummary}</p>
