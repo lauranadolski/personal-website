@@ -6,10 +6,6 @@ class NavigationBar extends React.Component {
         this.props.toggleNavigation("contact");
     }
 
-    showProjects = () => {
-        this.props.toggleNavigation("projects"); 
-    }
-    
     showAbout = () => {
         this.props.toggleNavigation("about"); 
     }
@@ -23,23 +19,23 @@ class NavigationBar extends React.Component {
         return (
             <div id="navigation-bar">
                 <div id="name-container">
-                    <a
+                    <button
                     id="name"
                     onClick={this.showHome}>
                         Laura Nadolski
-                    </a>
+                    </button>
                 </div>
 
                 <div id="navigation-bar-right-side-links-container">
-                    <a
+                    <button
                     onClick={this.showContactPage} 
                     className="navigation-bar-link-right-side">
                         Say Hello
-                    </a>
-                    <a 
+                    </button>
+                    <button 
                     onClick={this.showAbout}className="navigation-bar-link-right-side">
                         About
-                    </a>
+                    </button>
                 </div>
             </div>
             
